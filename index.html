@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" href="dist\css\main.min.css" />
+
+    <!-- EXAMPLE FLEX BOX STYLING -->
+    <style>
+      .container {
+        border: 3px solid red;
+        height: 500px;
+        display: flex;
+        /* display: inline-flex; */
+        /* flex-direction: row; (default)*/
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+
+        /* justify-content: flex-start; (default)*/
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+
+        /* align-items: stretch; (default)*/
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: baseline; */
+
+        /* align-content: stretch; (default)*/
+        /* align-content: flex-end; */
+        /* align-content: flex-start; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+    </div>
+  </body>
+</html>
