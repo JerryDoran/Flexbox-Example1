@@ -26,16 +26,53 @@
     <!-- EXAMPLE FLEX BOX STYLING -->
     <style>
       .container {
-        border: 3px solid red;
-        height: 500px;
+        /* Main axis will be horizontal and cross axis will be vertical for row direction */
+
+        border: 5px solid red;
+        /* height: 500px; */
         display: flex;
+        /* display: inline-flex; */
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* justify-content: flex-start; (default)*/
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+
+        /* align-items: stretch; (default)*/
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        align-items: center;
+        /* align-items: baseline; */
+
+        /* align-content: stretch; (default)*/
+        /* align-content: flex-end; */
+        /* align-content: flex-start; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        /* align-content: center; */
+      }
+
+      .container-1 {
+        /* Main axis will be vertical and cross axis will be horizontal for column direction */
+
+        /* border: 5px solid blue;
+        height: 800px;
+        display: flex; */
         /* display: inline-flex; */
         /* flex-direction: row; (default)*/
         /* flex-direction: row-reverse; */
         /* flex-direction: column; */
         /* flex-direction: column-reverse; */
 
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         /* flex-wrap: wrap-reverse; */
 
         /* justify-content: flex-start; (default)*/
@@ -55,7 +92,31 @@
         /* align-content: flex-start; */
         /* align-content: space-around; */
         /* align-content: space-between; */
-        align-content: center;
+        /* align-content: center; */
+      }
+
+      .box-3 {
+        /* align-self: flex-end; */
+
+        /* All children have order of 0 by default */
+        order: -1;
+      }
+
+      .box-4 {
+        /* align-self: stretch; */
+        order: 1;
+      }
+
+      .box {
+        flex-grow: 1;
+      }
+
+      .box-1 {
+        order: 2;
+        flex-grow: 6;
+      }
+      .box-2 {
+        flex-grow: 3;
       }
     </style>
   </head>
@@ -64,12 +125,24 @@
       <div class="box box-1">1</div>
       <div class="box box-2">2</div>
       <div class="box box-3">3</div>
-      <div class="box box-4">4</div>
-      <div class="box box-5">5</div>
+      <!-- <div class="box box-4">4</div>
+      <div class="box box-5">5</div> -->
+      <!-- <div class="box generic">G</div>
       <div class="box generic">G</div>
       <div class="box generic">G</div>
-      <div class="box generic">G</div>
-      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
     </div>
+
+    <!-- <div class="container-1">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div> -->
+    <!-- <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div> -->
+    <!-- </div> -->
   </body>
 </html>
