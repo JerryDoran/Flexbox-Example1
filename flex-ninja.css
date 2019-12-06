@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 100px;
+  /* min-width: 800px; */
+  /* flex-basis: 800px; */
+  /* flex-grow: 1; */
+
+  /* First Number - flex-grow */
+  /* Second Number - flex-shrink */
+  /* Third Number - flex-basis */
+  flex: 1 0 200px;
+}
+
+.one {
+  background: red;
+
+  /* Can be looked at like taking up 4 cols in a 12 col grid */
+  /* Rate at which each flex item grows */
+  /* flex-grow: 4; */
+
+  /* Rate at which each flex item shrinks */
+  /* flex-shrink: 1; */
+  /* flex-basis: 100px; */
+}
+
+.two {
+  background: blue;
+
+  /* Can be looked at like taking up 6 cols in a 12 col grid */
+  /* flex-grow: 6; */
+  /* flex-shrink: 2; */
+  /* flex-basis: 200px; */
+}
+
+.three {
+  background: green;
+  /* flex-grow: 2; */
+  /* flex-shrink: 3; */
+  /* flex-basis: 300px; */
+}
